@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openbox_menu xmlns="http://openbox.org/3.4/menu">
+
+
+
+<menu id="apps-editors-menu" label="Metin Düzenleyici">
+  <item label="Pluma" icon="/usr/share/icons/elementary/apps/16/accessories-text-editor.svg">
+    <action name="Execute">
+      <command>pluma</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+        <wmclass>Pluma</wmclass>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Mousepad" icon="/usr/share/icons/hicolor/16x16/apps/org.xfce.mousepad.png">
+    <action name="Execute">
+      <command>mousepad</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Vim">
+    <action name="Execute">
+      <execute>xfce4-terminal -T Vim -e vim</execute>
+    </action>
+  </item>
+</menu>
+
+<menu id="apps-fileman-menu" label="Dosya Yöneticisi">
+  <item label="Nemo" icon="/usr/share/icons/hicolor/16x16/apps/nemo.png">
+    <action name="Execute">
+      <command>nemo</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Thunar" icon="/usr/share/icons/hicolor/16x16/apps/org.xfce.thunar.png">
+    <action name="Execute">
+      <command>Thunar</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+</menu>
+
+<menu id="apps-term-menu" label="Terminal">
+  <item label="Xfce Terminal" icon="/usr/share/icons/hicolor/16x16/apps/org.xfce.terminal.png">
+    <action name="Execute">
+      <command>xfce4-terminal</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="LX Terminal">
+    <action name="Execute"><command>lxterminal</command></action>
+  </item>
+</menu>
+
+<menu id="apps-net-menu" label="Internet">
+  <item label="Firefox" icon="/usr/share/icons/hicolor/16x16/apps/firefox.png">
+    <action name="Execute">
+      <command>firefox</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+        <wmclass>Firefox</wmclass>
+      </startupnotify>
+    </action>
+  </item>  
+</menu>
+
+<menu id="apps-multimedia-menu" label="Multimedia">
+  <item label="Gnome Media Player">
+    <action name="Execute">
+      <command>gnome-mplayer</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+</menu>
+<menu id="system-menu" label="Ayarlar">
+  <item label="Çözünürlük Ayarları">
+    <action name="Execute">
+      <command>arandr</command>
+      <startupnotify><enabled>yes</enabled></startupnotify>
+    </action>
+  </item>
+  <item label="Tema Ayarları">
+    <action name="Execute">
+      <command>lxappearance</command>
+      <startupnotify><enabled>yes</enabled></startupnotify>
+    </action>
+  </item>
+  <item label="Duvarkağıdı Ayarları">
+    <action name="Execute">
+      <command>nitrogen</command>
+      <startupnotify><enabled>yes</enabled></startupnotify>
+    </action>
+  </item>
+  <item label="Openbox Ayarları">
+    <action name="Execute">
+      <command>obconf</command>
+      <startupnotify><enabled>yes</enabled></startupnotify>
+    </action>
+  </item>
+  <item label="Xfce Ayarları">
+    <action name="Execute">
+      <command>xfce-setting-show</command>
+      <startupnotify><enabled>yes</enabled></startupnotify>
+    </action>
+  </item>
+  <separator />
+  <item label="Reconfigure Openbox">
+    <action name="Reconfigure" />
+  </item>
+</menu>
+
+<menu id="root-menu" label="Openbox 3">
+  <menu id="apps-editors-menu"/>
+  <menu id="apps-fileman-menu"/>
+  <menu id="apps-term-menu"/>
+  <separator />
+  <menu id="apps-net-menu"/>
+  <menu id="apps-multimedia-menu"/>
+  <separator />
+  <menu id="system-menu"/>
+  <separator />
+  <item label="Çıkış">
+    <action name="Exit">
+      <prompt>yes</prompt>
+    </action>
+  </item>
+  <item label="Kapat">
+    <action name="Execute">
+      <command>shutdown -h now</command>
+      <startupnotify><enabled>yes</enabled></startupnotify>
+    </action>
+  </item>
+ 
+  <item label="Refresh Polybar">
+    <action name="Execute">
+      <command>polybar -r mybar</command>
+      <startupnotify><enabled>yes</enabled></startupnotify>
+    </action>
+  </item>
+
+  <item label="Refresh Openbox">
+    <action name="Restart">
+      <prompt>yes</prompt>
+    </action>
+  </item>
+</menu>
+
+</openbox_menu>

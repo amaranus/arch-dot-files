@@ -1,0 +1,75 @@
+#AB #5e5c64
+#AF #ffffff
+#AL #292929
+#NB #383838
+#NF #dadada
+#NL #292929
+#B? True
+#H? False
+#G? False
+#R? False
+
+border.width: 1 
+padding.width: 4
+padding.height: 2
+window.client.padding.width: 0
+window.client.padding.height: 0
+window.handle.width: 4
+
+*.active.border.color: #292929
+*.inactive.border.color: #292929
+
+window.*.grip.bg: parentrelative
+window.*.title.bg:  flat  solid
+window.*.label.bg: parentrelative
+window.*.button.*.bg: parentrelative
+window.*.handle.bg:  flat  solid
+window.*.text.justify: center
+
+window.active.title.bg.color: #5e5c64
+window.active.title.bg.colorTo: #46454b
+window.active.label.text.color: #ffffff
+window.active.button.*.unpressed.image.color: #ffffff
+window.active.button.*.disabled.image.color: #939297
+window.active.button.*.hover.image.color: #aeadb1
+window.active.button.*.pressed.image.color: #2f2e32
+window.active.handle.bg.color:  #383838
+window.active.handle.bg.colorTo:  #252525
+
+window.inactive.title.bg.color: #383838
+window.inactive.title.bg.colorTo: #2a2a2a
+window.inactive.label.text.color: #898989
+window.inactive.button.*.unpressed.image.color: #898989
+window.inactive.button.*.disabled.image.color: #6e6e6e
+window.inactive.button.*.hover.image.color: #dadada
+window.inactive.button.*.pressed.image.color: #1c1c1c
+window.inactive.handle.bg.color: #383838
+window.inactive.handle.bg.colorTo: #252525
+
+menu.title.bg:  flat  solid
+menu.title.bg.color: #5e5c64
+menu.title.bg.colorTo: #46454b
+menu.title.text.color: #ffffff
+menu.items.bg:  flat  solid
+menu.items.bg.color: #383838
+menu.items.bg.colorTo: #2a2a2a
+menu.items.text.color: #dadada
+menu.items.disabled.text.color: #6e6e6e
+menu.items.active.bg:  flat  solid
+menu.items.active.bg.color: #5e5c64
+menu.items.active.bg.colorTo: #46454b
+menu.items.active.text.color: #ffffff
+menu.items.active.disabled.text.color: #939297
+menu.separator.color: #292929
+menu.separator.padding.width: 0
+menu.separator.width: 1
+
+osd.bg:  flat  solid
+osd.bg.color: #383838
+osd.bg.colorTo: #2a2a2a
+osd.unhilight.bg:  flat  solid
+osd.unhilight.bg.color: #383838
+osd.unhilight.bg.colorTo: #2a2a2a
+osd.hilight.bg:  flat  solid
+osd.hilight.bg.color: #5e5c64
+osd.hilight.bg.colorTo: #46454b

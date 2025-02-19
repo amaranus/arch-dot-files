@@ -1,0 +1,42 @@
+#
+# These things are run when an Openbox X Session is started.
+# You may place a similar script in $HOME/.config/openbox/autostart
+# to run user-specific things.
+#
+
+# If you want to use GNOME config tools...
+#
+#if test -x /usr/lib/openbox/gnome-settings-daemon >/dev/null; then
+#  /usr/lib/openbox/gnome-settings-daemon &
+#elif which gnome-settings-daemon >/dev/null 2>&1; then
+#  gnome-settings-daemon &
+#fi
+
+# If you want to use XFCE config tools...
+#
+#xfce-mcs-manager &
+/usr/lib/mate-polkit/polkit-mate-authentication-agent-1 &
+
+# Çözünürlüğü ayarla
+xrandr -s 1600x900 &
+
+# timt2 barı başlat
+# tint2 &
+
+# Polybarı başlat
+$HOME/.config/polybar/launch.sh &
+
+# Picomu başlat
+picom --config ~/.config/picom.conf --daemon & 
+
+# Duvarkağıdını yükle
+nitrogen --restore &
+
+
+nm-applet &
+
+# Ses ikonunu başlat
+(sleep 2 && volumeicon) &
+
+# VirtalBox servisleri başlat
+VBoxClient-all &
