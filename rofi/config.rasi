@@ -1,0 +1,7 @@
+//@theme "~/.config/rofi/themes/dmenu.rasi"
+//@theme "~/.config/rofi/themes/colors-rofi-dark.rasi"
+
+
+//@theme "/usr/share/rofi/themes/dmenu.rasi"
+
+@theme "/usr/share/rofi/themes/Paper.rasi"

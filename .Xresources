@@ -1,0 +1,20 @@
+Xft.dpi: 96
+*faceName: MesloLGL Nerd Font Mono
+*faceSize: 13
+*ttyModes: 256
+
+! Xterm Renk Ayarları
+*background: #2E3436
+! *foreground: #dcdcdc
+
+
+
+! Diğer yapılandırmalar
+! XTerm*cursorColor: #ffcc00  ! İmleç rengi
+! XTerm*font: xft:Monospace:size=10  ! Yazı tipi ve boyutu
+
+! Şeffaflık Ayarları
+! *background: rgba:0000/0000/0000/cccc
+*foreground: #dcdcdc
+*transparent: true
+*shading: 32
