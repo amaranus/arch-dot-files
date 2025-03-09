@@ -1,5 +1,6 @@
+file:///home/mstf/.config .config
 file:///home/mstf/.config/openbox openbox
 file:///home/mstf/.config/polybar polybar
 file:///home/mstf/.config/conky conky
 file:///home/mstf/.config/rofi rofi
-file:///home/mstf/.cache/wal wal
+file:///home/mstf/.config/i3 i3
